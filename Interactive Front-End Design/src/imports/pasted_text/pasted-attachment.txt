@@ -1,0 +1,465 @@
+Modify and upgrade the Guild Master / Admin interface for the “Downtown” university platform.
+
+Goal:
+Update the admin page so it matches the new reward system of the Vanguard student interface. Remove all money, wallet, payment, escrow, deposit, and financial reward elements. Replace them with a points, certificate, badge, leaderboard, and recognition system.
+
+The Admin / Guild Master user should be able to create missions, assign points, review proof, approve student progress, issue certificates, and track student achievements.
+
+Visual Style:
+Keep the same design style as the Login Page and Vanguard Page:
+- Deep Navy background
+- Gold highlights for rewards and certificates
+- Cyan accents for tech/status actions
+- Emerald accents for approved/completed states
+- Glassmorphism cards
+- Soft glow effects
+- Rounded corners
+- Premium university SaaS style
+- Subtle gamified RPG feeling
+- Professional enough for clubs and university departments
+
+Important:
+The admin interface should feel official, trusted, and powerful. It should look like a control center where clubs and university departments can manage student engagement.
+
+Remove These Elements:
+- Wallet balance
+- Money rewards
+- Escrow
+- Deposit system
+- Payment release
+- Financial transactions
+- Cash reward labels
+
+Replace Them With:
+- Points rewards
+- Certificate rewards
+- Badge unlocks
+- Volunteer hours
+- Leaderboard impact
+- Official recognition
+- Student achievement tracking
+
+Main Admin Dashboard Layout:
+
+Top Section:
+Create a Guild Master status header.
+
+Include:
+- Admin / Club name
+- Role badge: “Guild Master”
+- Verified university department badge
+- Total active missions
+- Total points awarded
+- Total certificates issued
+- Pending proof reviews
+
+Example:
+“Tech Club — Guild Master”
+“Verified University Organization”
+“12 Active Missions”
+“18,420 Points Awarded”
+“42 Certificates Issued”
+“9 Pending Reviews”
+
+Use gold and cyan highlights.
+
+Section 1: Mission Creation With Points & Certificate Rewards
+
+Create or improve a mission creation panel called:
+
+“Create Recognition Mission”
+
+Fields:
+- Mission title
+- Mission description
+- Mission type: Official Mission / Mentorship Mission / Volunteer Mission / Hackathon Support / Event Support
+- Difficulty: Easy / Medium / Hard
+- Deadline
+- Maximum participants
+- Required proof type: Photo / Link / Text Report / File Upload / Mentor Confirmation
+- Points reward
+- Volunteer hours
+- Certificate progress reward
+- Badge reward
+
+Reward Setup Options:
+Instead of money, allow the admin to select:
+- Points only
+- Points + certificate progress
+- Points + badge
+- Points + volunteer hours
+- Full certificate unlock
+
+Example reward setup:
+Mission: “Guide First-Year Students”
+Reward: +150 Points
+Certificate Progress: Counts toward Peer Mentor Certificate
+Volunteer Hours: +1 Hour
+Badge: Junior Support Badge
+
+Add a button:
+“Publish Mission”
+
+Section 2: Proof Review Queue
+
+Create a proof review section called:
+
+“Proof Review Queue”
+
+This replaces payment release.
+
+Each proof card should show:
+- Student name
+- Mission title
+- Submitted proof type
+- Submission time
+- Current student rank
+- Points to award
+- Certificate progress affected
+- Proof preview area
+- Admin action buttons
+
+Buttons:
+- Approve Proof
+- Reject Proof
+- Request Resubmission
+- View Student Profile
+
+When approved, show:
+“Approve and Award +150 Points”
+“Add progress to Peer Mentor Certificate”
+“Update leaderboard position”
+
+Do not use “release payment” or “transfer reward”.
+
+Section 3: Certificate Builder
+
+Create a section called:
+
+“Certificate Builder”
+
+Admins should be able to create digital certificates as mission rewards.
+
+Fields:
+- Certificate name
+- Certificate category
+- Issued by
+- Required missions
+- Required points
+- Required mentorship sessions
+- Required volunteer hours
+- Badge included
+- Certificate description
+
+Certificate categories:
+- Mentorship
+- Leadership
+- Volunteering
+- Hackathon Support
+- Event Ambassador
+- Community Contribution
+
+Example certificate:
+Certificate Name: Peer Mentor Certificate
+Requirement: Complete 5 mentorship missions
+Reward: Certificate unlock + 500 bonus points
+Issued by: Student Affairs Department
+
+Add buttons:
+- Create Certificate
+- Preview Certificate
+- Save as Template
+
+Section 4: Certificate Templates Library
+
+Add a certificate template library with beautiful cards.
+
+Templates:
+1. Peer Mentor Certificate
+2. Campus Leadership Certificate
+3. Volunteer Excellence Certificate
+4. Event Ambassador Certificate
+5. Hackathon Support Certificate
+6. Community Contributor Certificate
+
+Each card should show:
+- Certificate name
+- Small certificate preview thumbnail
+- Requirement summary
+- Number of students eligible
+- Status: Active / Draft
+- Button: Edit Template
+
+Design:
+Make certificate cards look premium and official. Use gold borders, soft glow, university seal placeholder, and clean typography.
+
+Section 5: Certificate Approval Queue
+
+Create a section called:
+
+“Certificate Approval Queue”
+
+This section shows students who completed certificate requirements and are ready for approval.
+
+Each card should show:
+- Student name
+- Student rank
+- Certificate they are eligible for
+- Progress completed
+- Missions completed
+- Points earned
+- Mentorship sessions completed
+- Volunteer hours completed
+
+Example:
+Aisha Rahman
+Gold Vanguard
+Eligible for: Peer Mentor Certificate
+Progress: 5 / 5 mentorship sessions completed
+Total Points: 2,850
+Status: Ready for approval
+
+Buttons:
+- Approve Certificate
+- Review Activity
+- Reject / Request Review
+
+After approval, show:
+“Certificate Issued”
+“Verification ID Generated”
+
+Section 6: Digital Certificate Preview
+
+Add a certificate preview panel.
+
+It should show how the certificate will look before issuing.
+
+Certificate preview should include:
+- University / Club logo placeholder
+- Certificate title
+- Student name placeholder
+- Description text
+- Issued by
+- Issue date
+- Verification ID
+- Signature area
+- QR code placeholder
+
+Example certificate text:
+“This certificate is awarded to [Student Name] for outstanding contribution to the university community through mentorship, leadership, and mission participation.”
+
+Verification ID example:
+DWT-CERT-2026-00482
+
+Add buttons:
+- Preview Full Certificate
+- Issue Certificate
+- Download Sample
+
+Section 7: Student Achievement Dashboard
+
+Create an admin analytics section called:
+
+“Student Achievement Dashboard”
+
+Show a table or card grid of active students.
+
+Each student row/card should show:
+- Student name
+- Current rank
+- Total points
+- Missions completed
+- Mentorship sessions completed
+- Certificates earned
+- Volunteer hours
+- Leaderboard position
+- Trust score / approval rate
+
+Example:
+Omar Khalid
+Diamond Vanguard
+6,320 Points
+24 Missions Completed
+8 Mentorship Sessions
+3 Certificates Earned
+Leaderboard: #1
+
+Add filters:
+- Rank
+- Certificate status
+- Mission type
+- Department / Club
+- Time period
+
+Section 8: Leaderboard Control Panel
+
+Add a section called:
+
+“Leaderboard Control Panel”
+
+This helps admins see how their missions affect student ranking.
+
+Show:
+- Top contributors
+- Most active mentors
+- Most completed missions
+- Fastest rising students
+- Top clubs by engagement
+- Students close to next rank
+
+Example:
+#1 Omar — Diamond — 6,320 pts
+#2 Aisha — Platinum — 5,870 pts
+#3 Sara — Gold — 3,110 pts
+
+Add insight cards:
+- “32 students moved up a rank this month”
+- “Peer mentorship missions generated 4,200 points”
+- “12 students are close to unlocking certificates”
+
+Section 9: Recognition Campaigns
+
+Create a campaign management section called:
+
+“Recognition Campaigns”
+
+Admins can create larger campaigns that reward students with points and certificates.
+
+Fields:
+- Campaign name
+- Campaign goal
+- Target audience
+- Related missions
+- Total points pool
+- Certificate reward
+- Start date
+- End date
+- Number of participants
+
+Example campaign:
+Campaign Name: First-Year Support Week
+Goal: Encourage seniors to mentor junior students
+Reward: Campus Leadership Certificate
+Requirement: Complete 3 junior support missions
+Bonus: +300 points
+
+Campaign cards should show:
+- Campaign title
+- Progress
+- Number of students joined
+- Certificates available
+- Missions completed
+- Status: Active / Completed / Draft
+
+Buttons:
+- Create Campaign
+- View Campaign Analytics
+- Edit Campaign
+
+Section 10: Mission Analytics
+
+Add a clean analytics area for admins.
+
+Cards:
+- Active missions
+- Completed missions
+- Pending proof submissions
+- Points awarded this month
+- Certificates issued this month
+- Most popular mission type
+- Average approval time
+- Student engagement growth
+
+Use charts:
+- Points awarded over time
+- Mission completion rate
+- Certificate unlock progress
+- Mentorship participation
+
+Keep charts clean and easy to understand.
+
+Section 11: Updated Admin Navigation
+
+Update the admin sidebar or top navigation.
+
+Navigation items:
+- Dashboard
+- Create Mission
+- Proof Reviews
+- Certificates
+- Campaigns
+- Student Achievements
+- Leaderboard
+- Analytics
+- Settings
+
+Highlight the active page using gold or cyan glow.
+
+Section 12: Status Labels
+
+Use clear status labels across the interface:
+
+Mission status:
+- Draft
+- Active
+- Completed
+- Archived
+
+Proof status:
+- Pending Review
+- Approved
+- Rejected
+- Needs Resubmission
+
+Certificate status:
+- Locked
+- In Progress
+- Eligible
+- Issued
+
+Campaign status:
+- Draft
+- Active
+- Completed
+
+Student rank status:
+- Bronze Vanguard
+- Silver Vanguard
+- Gold Vanguard
+- Platinum Vanguard
+- Diamond Vanguard
+- Campus Legend
+
+Important UX Rules:
+- Admins should clearly understand that they are rewarding students with points, certificates, badges, and recognition.
+- The page should not mention money or payments anywhere.
+- The admin should feel in control of campus engagement.
+- Proof approval should directly connect to points and certificate progress.
+- Certificates should feel official and valuable.
+- Keep the dashboard clean, not too crowded.
+- Use strong visual hierarchy.
+- Use gold for achievements and certificates.
+- Use emerald for approved states.
+- Use cyan for system actions and analytics.
+- Use red only for rejection or warning states.
+
+Microinteractions:
+- Hover glow on certificate cards
+- Animated points counter
+- Smooth approval animation when proof is approved
+- Certificate unlock animation
+- Rank progression animation
+- Campaign progress animation
+- Soft card hover movement
+
+Main Dashboard Priority:
+1. Admin status summary
+2. Pending proof reviews
+3. Create mission with points/certificate rewards
+4. Certificate approval queue
+5. Student achievement dashboard
+6. Leaderboard and analytics
+7. Recognition campaigns and certificate templates
+
+Final Result:
+The Guild Master / Admin interface should become a full recognition control center. Admins should be able to create missions, assign points, approve proof, build certificates, issue certificates, manage campaigns, and track student growth. The design must match the Vanguard interface and show that Downtown rewards students through leadership, contribution, certificates, and campus reputation instead of money.
